@@ -1,0 +1,50 @@
+// @font-face {
+//     font-family: 'tt_normsregular';
+//     src: url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.eot');
+//     src: url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.woff2') format('woff2'),
+//          url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.woff') format('woff'),
+//          url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.ttf') format('truetype'),
+//          url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.svg#tt_normsregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'tt_normsbold';
+//     src: url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.eot');
+//     src: url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.woff2') format('woff2'),
+//          url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.woff') format('woff'),
+//          url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.ttf') format('truetype'),
+//          url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.svg#tt_normsbold') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+
+ymaps[class$="-copyright"] {
+    display: none;
+}
+
+.layout{
+  	flex: 1 0 auto;
+}
+
+
+.wrapper{
+
+}
+.container{
+	width: 100%;
+	max-width: 1056px;
+    padding: 0 20px;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+.page-content{
+	padding: 20px 0;
+}
+
