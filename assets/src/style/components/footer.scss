@@ -3,4 +3,52 @@
 	color: #949494;
 	background: rgb(25,30,50);
 	padding: 30px 0;
+	font-family: 'gotham_proregular';
+	&__logo{
+		margin-bottom: 20px;
+		a{
+			display: inline-block;
+		}
+		img{
+			display: block;
+		}
+	}
+	&__info{
+		color: #fff;
+		font-size: 12px;
+		max-width: 740px;
+		line-height: 16px;
+		text-align: left;
+		letter-spacing: 0px;
+	}
+
+	&__links{
+		font-size: 12px;
+		margin-bottom: 20px;
+		a{
+			color: #949494;
+		}
+	}
+}
+
+
+.socials{
+	display: flex;
+	align-items: center;
+	&__item{
+		margin-right: 14px;
+    	max-height: 24px;
+		&:last-child{
+			margin-right: 0;
+		}
+		svg{
+			fill: rgb(180,200,255);
+			transition: all .3s ease;
+		}
+		&:hover{
+			svg{
+				fill: #282828;
+			}
+		}
+	}
 }

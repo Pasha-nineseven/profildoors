@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>title</title>
+    
+    <!-- favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end-->
+    
+    <!-- og  -->
+    <!-- <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="img/og.jpg"> -->
+    <!-- og end-->
+    
+    <link href="css/libs.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		<header class="page-header">
+			<div class="container">
+				<div class="page-header__wrap">
+					<a href="/" class="page-header__logo">
+						<img src="img/content/r-logo.png" alt="" class="logo-desktop">
+						<img src="img/content/r-logo-mobile.png" class="logo-mobile" alt="logo">
+					</a>
+		
+					<div class="page-header-view">
+						<div class="page-header-view-top">
+							<div class="page-header-links">
+								<div class="page-header-links__item m-geo">
+									<a href="#">Могилев</a>
+								</div>
+								<a href="#" class="page-header-links__item">Новинки</a>
+								<a href="#" class="page-header-links__item">Сертификаты и рекламные материалы</a>
+								<a href="#" class="page-header-links__item">Вакансии</a>
+							</div>
+							<div class="page-header-socials">
+								<a href="#" class="socials__item">
+									<svg width="24px" height="24px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0"></path><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0"></path></svg>
+								</a>
+								<a href="#" class="socials__item">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37259 18.6274 0 12 0C5.37256 0 0 5.37259 0 12C0 18.6274 5.37256 24 12 24ZM18.2186 8.00223C18.6813 8.00223 18.7773 8.23676 18.6813 8.55609V8.55093C18.489 9.42639 16.6173 12.0114 16.6173 12.0114C16.4559 12.2666 16.3921 12.3942 16.6173 12.6804C16.6343 12.7038 16.72 12.7898 16.8496 12.9199C17.3973 13.4695 18.7288 14.8053 18.9644 15.5258C19.0913 15.9491 18.8705 16.1637 18.4342 16.1637H16.9036C16.4938 16.1637 16.2872 15.9386 15.8383 15.4492C15.6494 15.2434 15.4177 14.9908 15.11 14.6887C14.2004 13.8287 13.8099 13.7166 13.5846 13.7166C13.1697 13.7166 13.1707 13.8324 13.1805 14.9098C13.1823 15.1019 13.1843 15.3246 13.1843 15.5826C13.1843 15.9521 13.0664 16.1667 12.09 16.1667C11.1451 16.1049 10.2288 15.8232 9.41675 15.3448C8.60461 14.8665 7.92017 14.2052 7.41992 13.4157C5.51978 10.8026 5 8.82455 5 8.4263C5 8.20135 5.08936 8 5.52576 8H7.06091C7.45142 8 7.60168 8.16815 7.75183 8.58414C8.49988 10.7281 9.76318 12.6014 10.283 12.6014C10.4774 12.6014 10.566 12.5115 10.566 12.0269V9.81433C10.5308 9.18307 10.3065 8.90976 10.1404 8.70743C10.038 8.58261 9.95776 8.48483 9.95776 8.34665C9.95923 8.31558 9.96484 8.28494 9.97437 8.25543C9.97949 8.2395 9.98572 8.22391 9.99304 8.20874C10.014 8.16553 10.0435 8.12677 10.0796 8.09476C10.1158 8.06274 10.1582 8.03809 10.2042 8.02222C10.2501 8.00632 10.2988 7.99954 10.3475 8.00223H12.7509C13.0731 8.00223 13.182 8.17331 13.182 8.55609V11.5342C13.182 11.8536 13.33 11.9657 13.4261 11.9657C13.6213 11.9657 13.7852 11.8536 14.1411 11.504C14.9144 10.5722 15.5481 9.53659 16.0225 8.4285C16.0708 8.29587 16.1621 8.1824 16.2822 8.10544C16.4023 8.02844 16.5448 7.99222 16.688 8.00223H18.2186Z"></path>
+									</svg>
+								</a>
+								<a href="#" class="socials__item">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37259 18.6274 0 12 0C5.37256 0 0 5.37259 0 12C0 18.6274 5.37256 24 12 24ZM12.4803 7.81659C11.2264 8.35599 8.72046 9.47244 4.9624 11.1659C4.35217 11.4169 4.03247 11.6625 4.00342 11.9026C3.95422 12.3083 4.44556 12.4681 5.11475 12.6858C5.20569 12.7154 5.29993 12.746 5.39648 12.7785C6.05469 12.9998 6.94006 13.2586 7.40039 13.2689C7.81787 13.2783 8.28394 13.1002 8.79846 12.7348C12.3097 10.2834 14.1222 9.04425 14.2361 9.01752C14.3163 8.99869 14.4276 8.97498 14.5029 9.04428C14.5784 9.11359 14.5709 9.24481 14.563 9.28C14.5143 9.4946 12.5858 11.3489 11.5879 12.3086C11.2767 12.6078 11.056 12.82 11.0109 12.8685C10.9098 12.9771 10.8068 13.0798 10.7078 13.1785C10.0963 13.7882 9.6377 14.2454 10.7332 14.992C11.2594 15.3507 11.6805 15.6473 12.1007 15.9433C12.5598 16.2666 13.0177 16.5891 13.6101 16.9908C13.761 17.0931 13.9052 17.1994 14.0455 17.3029C14.5796 17.6967 15.0594 18.0505 15.6522 17.994C15.9967 17.9613 16.3525 17.6263 16.5332 16.6271C16.9603 14.2657 17.7998 9.14941 17.9938 7.04108C18.0107 6.85635 17.9894 6.61996 17.9722 6.5162C17.9551 6.41241 17.9192 6.26456 17.7887 6.15512C17.6343 6.02548 17.3959 5.99814 17.2892 6.00009C16.8043 6.00894 16.0604 6.27646 12.4803 7.81659Z"></path>
+									</svg>
+								</a>
+								<a href="#" class="socials__item">
+									<svg width="24" height="24" viewBox="0 0 1536 1536"><path d="M1536 768q0 209-103 385.5T1153.5 1433T768 1536q-111 0-218-32q59-93 78-164q9-34 54-211q20 39 73 67.5t114 28.5q121 0 216-68.5T1232 968t52-270q0-114-59.5-214T1052 321t-255-63q-105 0-196 29t-154.5 77t-109 110.5t-67 129.5T249 738q0 104 40 183t117 111q30 12 38-20q2-7 8-31t8-30q6-23-11-43q-51-61-51-151q0-151 104.5-259.5T776 389q151 0 235.5 82t84.5 213q0 170-68.5 289T852 1092q-61 0-98-43.5T731 944q8-35 26.5-93.5t30-103T799 672q0-50-27-83t-77-33q-62 0-105 57t-43 142q0 73 25 122l-99 418q-17 70-13 177q-206-91-333-281T0 768q0-209 103-385.5T382.5 103T768 0t385.5 103T1433 382.5T1536 768z"></path></svg>
+								</a>
+					
+								<a href="#" class="socials__item">
+									<img src="img/content/3d.png" alt="">
+								</a>
+							</div>
+							<div class="page-header-view-lang">
+								<span class="page-header-view-lang__link">RU</span>
+								<div class="page-header-view-lang__list">
+									<a href="#" class="page-header-view-lang__item">EN</a>
+								</div>
+							</div>
+						</div>
+						<div class="page-header-menu">
+							<a href="#" class="page-header-menu__link">Компания</a>
+							<a href="#" class="page-header-menu__link">Каталог</a>
+							<a href="#" class="page-header-menu__link">Системы открывания</a>
+							<a href="#" class="page-header-menu__link">Где купить</a>
+							<a href="#dealer-popup" class="page-header-menu__link js-popup-inline">Стать дилером</a>
+							<a href="#" class="page-header-menu__link">Тв проекты</a>
+							<a href="#" class="page-header-menu__link">Техподдержка</a>
+							<a href="#" class="page-header-menu__link">Контакты</a>
+						</div>
+					</div>
+		
+					<div class="menu-toggle-view">
+						<a href="#" class="menu-toggle js-menu-toggle"></a>
+						<div class="menu-mobile">
+							<div class="menu-mobile__in">
+								<div class="container">
+									<div class="menu-mobile__list">
+										<a href="#" class="menu-mobile__link">Компания</a>
+										<a href="#" class="menu-mobile__link">Каталог</a>
+										<a href="#" class="menu-mobile__link">Системы открывания</a>
+										<a href="#" class="menu-mobile__link">Где купить</a>
+										<a href="#" class="menu-mobile__link">Стать дилером</a>
+										<a href="#" class="menu-mobile__link">Тв проекты</a>
+										<a href="#" class="menu-mobile__link">Техподдержка</a>
+										<a href="#" class="menu-mobile__link">Контакты</a>
+									</div>
+									<div class="menu-mobile-more">
+										<a href="#" class="menu-mobile-more__link">Новинки</a>
+										<a href="#" class="menu-mobile-more__link">Сертификаты и рекламные материалы</a>
+										<a href="#" class="menu-mobile-more__link">Вакансии</a>
+										<div class="page-header-view-lang">
+											<span class="page-header-view-lang__link">RU</span>
+											<div class="page-header-view-lang__list">
+												<a href="#" class="page-header-view-lang__item">EN</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+		<main class="page-content workarea m-where">
+            <div class="page-breadcrumbs">
+                <div class="container">
+                    <div class="page-breadcrumbs__list">
+                        <a href="#" class="page-breadcrumbs__item">ProfilDoors</a>
+                        <span class="page-breadcrumbs__item">Розничные магазины</span>
+                    </div>
+                </div>
+            </div>
+            <div class="page-title m-left m-comp">
+                <div class="container">
+                    <h1>РОЗНИЧНЫЕ МАГАЗИНЫ</h1>
+                    <a href="#" class="page-title__link">Дистрибьюторы</a>
+                </div>
+            </div>
+
+
+			<div class="where">
+                <div class="container">
+                    <div class="where-country">
+                        <a href="#" class="where-country__item">Россия</a>
+                        <span class="where-country__item active">Беларусь</span>
+                        <a href="#" class="where-country__item">Казахстан</a>
+                        <a href="#" class="where-country__item">Грузия</a>
+                        <a href="#" class="where-country__item">Англия</a>
+                        <a href="#" class="where-country__item">Арабские Эмираты</a>
+                        <a href="#" class="where-country__item">Германия</a>
+                        <a href="#" class="where-country__item">Латвия</a>
+                        <a href="#" class="where-country__item">Литва</a>
+                        <a href="#" class="where-country__item">Польша</a>
+                        <a href="#" class="where-country__item">Румыния</a>
+                        <a href="#" class="where-country__item">Словакия</a>
+                        <a href="#" class="where-country__item">Словения</a>
+                        <a href="#" class="where-country__item">Таджикистан</a>
+                        <a href="#" class="where-country__item">Узбекистан</a>
+                    </div>
+
+
+                    <div class="where-city">
+                        <div class="where-city__pre">
+                            Город
+                        </div>
+                        <div class="where-city__toggle">
+                            <select class="js-chosen" placeholder="Любой">
+                                <option value=""></option>
+                                <option value="Витебск">Витебск</option>
+                                <option value="Гомель">Гомель</option>
+                                <option value="Гродно">Гродно</option>
+                                <option value="Минск">Минск</option>
+                                <option value="Могилев">Могилев</option>
+                                <option value="Солигорск">Солигорск</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="b-where-map-wrapper">
+                        <a href="#" class="b-where-map-toggle js-b-where-map-toggle">Показать карту</a>
+                    </div>
+                    <div class="page-map">
+                        <a href="#" class="b-where-map-close js-b-where-map-close"></a>
+                        <div id="page-map" class="page-map__view"></div>
+                    </div>
+                    <div class="where-types">
+                        <div class="where-types__item">
+                            <div class="where-types__pre">
+                                <div class="where-types__icon">
+                                    <img src="img/content/map-icon-blue.png" alt="">
+                                </div>
+                                <div class="where-types__title">
+                                    ProfilDoors Design Mall
+                                </div>
+                            </div>
+                            <div class="where-types__info">
+                                <p>Премиальный магазин бренда PROFILDOORS специализируется на работе с дизайнерами интерьера и архитекторами,  с максимально представленным ассортиментом (от 120 кв.м).</p>
+                                <p>На выставке представлены:</p>
+                                <ul>
+                                    <li>двери из серий: 0Z, М, LK, L, E, AG, AX, AV, AGK, AGP, PA, PW, PM, PD;</li>
+                                    <li>скрытый короб INVISIBLE, INFINITY, SLIM;</li>
+                                    <li>все варианты систем открывания;</li>
+                                    <li>алюминиевые перегородки.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="where-types__item">
+                            <div class="where-types__pre">
+                                <div class="where-types__icon">
+                                    <img src="img/content/map-icon-white.png" alt="">
+                                </div>
+                                <div class="where-types__title">
+                                    ProfilDoors Design
+                                </div>
+                            </div>
+                            <div class="where-types__info">
+                                <p>Премиальный магазин бренда PROFILDOORS специализируется на работе с дизайнерами интерьера и архитекторами, в котором можно познакомиться с последними новинками фабрики и трендовыми решениями дверной индустрии (до 100 кв.м).</p>
+                                <p>На выставке представлены:</p>
+                                <ul>
+                                    <li>двери из серий: 0Z, М, LK, L, E, AG, AX, AV, AGK, AGP, PA, PW, PM, PD;</li>
+                                    <li>скрытый короб INVISIBLE, INFINITY, SLIM;</li>
+                                    <li>все варианты систем открывания;</li>
+                                    <li>алюминиевые перегородки.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="where-types__item">
+                            <div class="where-types__pre">
+                                <div class="where-types__icon">
+                                    <img src="img/content/map-icon-black.png" alt="">
+                                </div>
+                                <div class="where-types__title">
+                                    ProfilDoors Mall
+                                </div>
+                            </div>
+                            <div class="where-types__info">
+                                <p>Премиальный магазин бренда PROFILDOORS с максимально представленным ассортиментом (от 120 кв.м).</p>
+                                <p>На выставке представлены:</p>
+                                <ul>
+                                    <li>двери из серий: 0Z, М, LK, L, E, AG, AX, AV, AGK, AGP, PA, PW, PM, PD;</li>
+                                    <li>скрытый короб INVISIBLE, INFINITY, SLIM;</li>
+                                    <li>все варианты систем открывания;</li>
+                                    <li>алюминиевые перегородки.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="where-types__item">
+                            <div class="where-types__pre">
+                                <div class="where-types__icon">
+                                    <img src="img/content/map-icon-grey.png" alt="">
+                                </div>
+                                <div class="where-types__title">
+                                    Фирменный магазин ProfilDoors
+                                </div>
+                            </div>
+                            <div class="where-types__info">
+                                <p>Премиальный магазин бренда PROFILDOORS с максимально представленным ассортиментом (от 120 кв.м).</p>
+                                <p>На выставке представлены:</p>
+                                <ul>
+                                    <li>двери из серий: 0Z, М, LK, L, E, AG, AX, AV, AGK, AGP, PA, PW, PM, PD;</li>
+                                    <li>скрытый короб INVISIBLE, INFINITY, SLIM;</li>
+                                    <li>все варианты систем открывания;</li>
+                                    <li>алюминиевые перегородки.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-where-list">
+                        <div class="b-where__item m-moll">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item m-moll">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item m-moll">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item m-moll">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		</main>
+	</div><!-- END LAYOUT-->
+    <!-- POPUP -->
+    <div id="dealer-popup" class="popup m-dealer dnone">
+        <div class="popup-title">
+            Стать дилером
+        </div>
+        <form action="#">
+            <div class="popup-form">
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Имя и Фамилия 
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-name" name="name" value="">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Адрес эл. почты
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-email" name="email" value="">
+                </div>
+
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Название компании
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-company" name="company" value="">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Сайт
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-website" name="website" value="">
+                </div>
+
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Страна
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-country" name="country" value="">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Город
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-city" name="city" value="">
+                </div>
+
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Номер телефона
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-phone" name="phone" value="">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Дополнительная информация
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-info" name="info" value="">
+                </div>
+
+
+                <div class="popup-form__item">
+                    <input class="btn" type="submit" name="send" value="Отправить">
+                </div>
+            </div>
+        </form>
+        
+    </div>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="page-footer__logo">
+				<a href="/">
+					<img src="img/content/logo-footer.png" alt="">
+				</a>
+			</div>
+			<div class="page-footer__info">
+				&copy; Официальный сайт фабрики «ProfilDoors» Вся информация, представленная на сайте является ознакомительной.<br>
+				Производитель оставляет за собой право вносить изменения в конструкцию выпускаемой продукции.
+			</div>
+			<div class="page-footer__links">
+				<a href="#">Политика защиты и обработки персональных данных</a><br>
+				<a href="#">Положение о порядке хранения и защиты персональных данных пользователей</a>
+			</div>
+	
+			<div class="socials">
+				<a href="#" class="socials__item">
+					<svg width="24px" height="24px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0"></path><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0"></path></svg>
+				</a>
+				<a href="#" class="socials__item">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37259 18.6274 0 12 0C5.37256 0 0 5.37259 0 12C0 18.6274 5.37256 24 12 24ZM18.2186 8.00223C18.6813 8.00223 18.7773 8.23676 18.6813 8.55609V8.55093C18.489 9.42639 16.6173 12.0114 16.6173 12.0114C16.4559 12.2666 16.3921 12.3942 16.6173 12.6804C16.6343 12.7038 16.72 12.7898 16.8496 12.9199C17.3973 13.4695 18.7288 14.8053 18.9644 15.5258C19.0913 15.9491 18.8705 16.1637 18.4342 16.1637H16.9036C16.4938 16.1637 16.2872 15.9386 15.8383 15.4492C15.6494 15.2434 15.4177 14.9908 15.11 14.6887C14.2004 13.8287 13.8099 13.7166 13.5846 13.7166C13.1697 13.7166 13.1707 13.8324 13.1805 14.9098C13.1823 15.1019 13.1843 15.3246 13.1843 15.5826C13.1843 15.9521 13.0664 16.1667 12.09 16.1667C11.1451 16.1049 10.2288 15.8232 9.41675 15.3448C8.60461 14.8665 7.92017 14.2052 7.41992 13.4157C5.51978 10.8026 5 8.82455 5 8.4263C5 8.20135 5.08936 8 5.52576 8H7.06091C7.45142 8 7.60168 8.16815 7.75183 8.58414C8.49988 10.7281 9.76318 12.6014 10.283 12.6014C10.4774 12.6014 10.566 12.5115 10.566 12.0269V9.81433C10.5308 9.18307 10.3065 8.90976 10.1404 8.70743C10.038 8.58261 9.95776 8.48483 9.95776 8.34665C9.95923 8.31558 9.96484 8.28494 9.97437 8.25543C9.97949 8.2395 9.98572 8.22391 9.99304 8.20874C10.014 8.16553 10.0435 8.12677 10.0796 8.09476C10.1158 8.06274 10.1582 8.03809 10.2042 8.02222C10.2501 8.00632 10.2988 7.99954 10.3475 8.00223H12.7509C13.0731 8.00223 13.182 8.17331 13.182 8.55609V11.5342C13.182 11.8536 13.33 11.9657 13.4261 11.9657C13.6213 11.9657 13.7852 11.8536 14.1411 11.504C14.9144 10.5722 15.5481 9.53659 16.0225 8.4285C16.0708 8.29587 16.1621 8.1824 16.2822 8.10544C16.4023 8.02844 16.5448 7.99222 16.688 8.00223H18.2186Z"></path>
+					</svg>
+				</a>
+				<a href="#" class="socials__item">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37259 18.6274 0 12 0C5.37256 0 0 5.37259 0 12C0 18.6274 5.37256 24 12 24ZM12.4803 7.81659C11.2264 8.35599 8.72046 9.47244 4.9624 11.1659C4.35217 11.4169 4.03247 11.6625 4.00342 11.9026C3.95422 12.3083 4.44556 12.4681 5.11475 12.6858C5.20569 12.7154 5.29993 12.746 5.39648 12.7785C6.05469 12.9998 6.94006 13.2586 7.40039 13.2689C7.81787 13.2783 8.28394 13.1002 8.79846 12.7348C12.3097 10.2834 14.1222 9.04425 14.2361 9.01752C14.3163 8.99869 14.4276 8.97498 14.5029 9.04428C14.5784 9.11359 14.5709 9.24481 14.563 9.28C14.5143 9.4946 12.5858 11.3489 11.5879 12.3086C11.2767 12.6078 11.056 12.82 11.0109 12.8685C10.9098 12.9771 10.8068 13.0798 10.7078 13.1785C10.0963 13.7882 9.6377 14.2454 10.7332 14.992C11.2594 15.3507 11.6805 15.6473 12.1007 15.9433C12.5598 16.2666 13.0177 16.5891 13.6101 16.9908C13.761 17.0931 13.9052 17.1994 14.0455 17.3029C14.5796 17.6967 15.0594 18.0505 15.6522 17.994C15.9967 17.9613 16.3525 17.6263 16.5332 16.6271C16.9603 14.2657 17.7998 9.14941 17.9938 7.04108C18.0107 6.85635 17.9894 6.61996 17.9722 6.5162C17.9551 6.41241 17.9192 6.26456 17.7887 6.15512C17.6343 6.02548 17.3959 5.99814 17.2892 6.00009C16.8043 6.00894 16.0604 6.27646 12.4803 7.81659Z"></path>
+					</svg>
+				</a>
+				<a href="#" class="socials__item">
+					<svg width="24" height="24" viewBox="0 0 1536 1536"><path d="M1536 768q0 209-103 385.5T1153.5 1433T768 1536q-111 0-218-32q59-93 78-164q9-34 54-211q20 39 73 67.5t114 28.5q121 0 216-68.5T1232 968t52-270q0-114-59.5-214T1052 321t-255-63q-105 0-196 29t-154.5 77t-109 110.5t-67 129.5T249 738q0 104 40 183t117 111q30 12 38-20q2-7 8-31t8-30q6-23-11-43q-51-61-51-151q0-151 104.5-259.5T776 389q151 0 235.5 82t84.5 213q0 170-68.5 289T852 1092q-61 0-98-43.5T731 944q8-35 26.5-93.5t30-103T799 672q0-50-27-83t-77-33q-62 0-105 57t-43 142q0 73 25 122l-99 418q-17 70-13 177q-206-91-333-281T0 768q0-209 103-385.5T382.5 103T768 0t385.5 103T1433 382.5T1536 768z"></path></svg>
+				</a>
+	
+				<a href="#" class="socials__item">
+					<img src="img/content/3d.png" alt="">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/libs/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

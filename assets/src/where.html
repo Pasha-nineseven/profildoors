@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/header.html
+		<main class="page-content workarea m-where">
+            <div class="page-breadcrumbs">
+                <div class="container">
+                    <div class="page-breadcrumbs__list">
+                        <a href="#" class="page-breadcrumbs__item">ProfilDoors</a>
+                        <span class="page-breadcrumbs__item">Розничные магазины</span>
+                    </div>
+                </div>
+            </div>
+            <div class="page-title m-left m-comp">
+                <div class="container">
+                    <h1>РОЗНИЧНЫЕ МАГАЗИНЫ</h1>
+                    <a href="#" class="page-title__link">Дистрибьюторы</a>
+                </div>
+            </div>
+
+
+			<div class="where">
+                <div class="container">
+                    <div class="where-country">
+                        <a href="#" class="where-country__item">Россия</a>
+                        <span class="where-country__item active">Беларусь</span>
+                        <a href="#" class="where-country__item">Казахстан</a>
+                        <a href="#" class="where-country__item">Грузия</a>
+                        <a href="#" class="where-country__item">Англия</a>
+                        <a href="#" class="where-country__item">Арабские Эмираты</a>
+                        <a href="#" class="where-country__item">Германия</a>
+                        <a href="#" class="where-country__item">Латвия</a>
+                        <a href="#" class="where-country__item">Литва</a>
+                        <a href="#" class="where-country__item">Польша</a>
+                        <a href="#" class="where-country__item">Румыния</a>
+                        <a href="#" class="where-country__item">Словакия</a>
+                        <a href="#" class="where-country__item">Словения</a>
+                        <a href="#" class="where-country__item">Таджикистан</a>
+                        <a href="#" class="where-country__item">Узбекистан</a>
+                    </div>
+
+
+                    <div class="where-city">
+                        <div class="where-city__pre">
+                            Город
+                        </div>
+                        <div class="where-city__toggle">
+                            <select class="js-chosen" placeholder="Любой">
+                                <option value=""></option>
+                                <option value="Витебск">Витебск</option>
+                                <option value="Гомель">Гомель</option>
+                                <option value="Гродно">Гродно</option>
+                                <option value="Минск">Минск</option>
+                                <option value="Могилев">Могилев</option>
+                                <option value="Солигорск">Солигорск</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="b-where-map-wrapper">
+                        <a href="#" class="b-where-map-toggle js-b-where-map-toggle">Показать карту</a>
+                    </div>
+                    <div class="page-map">
+                        <a href="#" class="b-where-map-close js-b-where-map-close"></a>
+                        <div id="page-map" class="page-map__view"></div>
+                    </div>
+                    <div class="where-types">
+                        <div class="where-types__item">
+                            <div class="where-types__pre">
+                                <div class="where-types__icon">
+                                    <img src="img/content/map-icon-blue.png" alt="">
+                                </div>
+                                <div class="where-types__title">
+                                    ProfilDoors Design Mall
+                                </div>
+                            </div>
+                            <div class="where-types__info">
+                                <p>Премиальный магазин бренда PROFILDOORS специализируется на работе с дизайнерами интерьера и архитекторами,  с максимально представленным ассортиментом (от 120 кв.м).</p>
+                                <p>На выставке представлены:</p>
+                                <ul>
+                                    <li>двери из серий: 0Z, М, LK, L, E, AG, AX, AV, AGK, AGP, PA, PW, PM, PD;</li>
+                                    <li>скрытый короб INVISIBLE, INFINITY, SLIM;</li>
+                                    <li>все варианты систем открывания;</li>
+                                    <li>алюминиевые перегородки.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="where-types__item">
+                            <div class="where-types__pre">
+                                <div class="where-types__icon">
+                                    <img src="img/content/map-icon-white.png" alt="">
+                                </div>
+                                <div class="where-types__title">
+                                    ProfilDoors Design
+                                </div>
+                            </div>
+                            <div class="where-types__info">
+                                <p>Премиальный магазин бренда PROFILDOORS специализируется на работе с дизайнерами интерьера и архитекторами, в котором можно познакомиться с последними новинками фабрики и трендовыми решениями дверной индустрии (до 100 кв.м).</p>
+                                <p>На выставке представлены:</p>
+                                <ul>
+                                    <li>двери из серий: 0Z, М, LK, L, E, AG, AX, AV, AGK, AGP, PA, PW, PM, PD;</li>
+                                    <li>скрытый короб INVISIBLE, INFINITY, SLIM;</li>
+                                    <li>все варианты систем открывания;</li>
+                                    <li>алюминиевые перегородки.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="where-types__item">
+                            <div class="where-types__pre">
+                                <div class="where-types__icon">
+                                    <img src="img/content/map-icon-black.png" alt="">
+                                </div>
+                                <div class="where-types__title">
+                                    ProfilDoors Mall
+                                </div>
+                            </div>
+                            <div class="where-types__info">
+                                <p>Премиальный магазин бренда PROFILDOORS с максимально представленным ассортиментом (от 120 кв.м).</p>
+                                <p>На выставке представлены:</p>
+                                <ul>
+                                    <li>двери из серий: 0Z, М, LK, L, E, AG, AX, AV, AGK, AGP, PA, PW, PM, PD;</li>
+                                    <li>скрытый короб INVISIBLE, INFINITY, SLIM;</li>
+                                    <li>все варианты систем открывания;</li>
+                                    <li>алюминиевые перегородки.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="where-types__item">
+                            <div class="where-types__pre">
+                                <div class="where-types__icon">
+                                    <img src="img/content/map-icon-grey.png" alt="">
+                                </div>
+                                <div class="where-types__title">
+                                    Фирменный магазин ProfilDoors
+                                </div>
+                            </div>
+                            <div class="where-types__info">
+                                <p>Премиальный магазин бренда PROFILDOORS с максимально представленным ассортиментом (от 120 кв.м).</p>
+                                <p>На выставке представлены:</p>
+                                <ul>
+                                    <li>двери из серий: 0Z, М, LK, L, E, AG, AX, AV, AGK, AGP, PA, PW, PM, PD;</li>
+                                    <li>скрытый короб INVISIBLE, INFINITY, SLIM;</li>
+                                    <li>все варианты систем открывания;</li>
+                                    <li>алюминиевые перегородки.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-where-list">
+                        <div class="b-where__item m-moll">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item m-moll">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item m-moll">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item m-moll">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-where__item">
+                            <div class="b-where__wrap">
+                                <div class="b-where__title">
+                                    ProfilDoors Mall
+                                </div>
+                                <div class="b-where-info">
+                                    <div class="b-where-address">
+                                        Гомель ул.Барыкина 84
+                                    </div>
+                                    <div class="b-where-work">
+                                        10.00-20-00 без выходных
+                                    </div>
+                                </div>
+                                <div class="b-where-contacts">
+                                    <div class="b-where-phone">+375 (44) 515-10-76</div>
+                                    <div class="b-where-mail">
+                                        <a href="maito:gomel-barykina@profildoors-dveri.by" class="b-where-mail__link">gomel-barykina@profildoors-dveri.by</a>
+                                    </div>
+                                </div>
+                                <div class="b-where-show">
+                                    <a href="#" class="b-where-show__link">Показать на карте</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		</main>
+	</div><!-- END LAYOUT-->
+    <!-- POPUP -->
+    <div id="dealer-popup" class="popup m-dealer dnone">
+        <div class="popup-title">
+            Стать дилером
+        </div>
+        <form action="#">
+            <div class="popup-form">
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Имя и Фамилия 
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-name" name="name" value="">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Адрес эл. почты
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-email" name="email" value="">
+                </div>
+
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Название компании
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-company" name="company" value="">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Сайт
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-website" name="website" value="">
+                </div>
+
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Страна
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-country" name="country" value="">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Город
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-city" name="city" value="">
+                </div>
+
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Номер телефона
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-phone" name="phone" value="">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">
+                        Дополнительная информация
+                        <span class="m-error">*</span>
+                    </div>
+                    <input type="text" id="b-pop-dialer_form-info" name="info" value="">
+                </div>
+
+
+                <div class="popup-form__item">
+                    <input class="btn" type="submit" name="send" value="Отправить">
+                </div>
+            </div>
+        </form>
+        
+    </div>
+	//= template/footer.html
+
+	<script src="js/libs/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

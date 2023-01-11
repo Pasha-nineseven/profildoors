@@ -40,10 +40,10 @@ a{
 	transition: color 0.3s linear;
 	text-decoration: none;
 	&:not([class]){
-		color: #058ACD;
-		&:hover{
-			color: #056493;
-		}
+		color: #949494;
+		// &:hover{
+		// 	color: #056493;
+		// }
 	}
 }
 
@@ -56,9 +56,13 @@ body {
 	font-size: $default-size-font;
 	font-family: $default-font;
 	color: $base-color;
-	font-weight: 300;
 	display: flex;
   	flex-direction: column;
+
+	line-height: 1.42857143;
+	&.fancybox-active{
+		height: 100%;
+	}
 }
 
 textarea,input {
@@ -80,3 +84,60 @@ textarea,input {
 :focus::-moz-placeholder          {color: transparent}
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
+
+
+.workarea{
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		font-weight: 500;
+		line-height: 1.1;
+	}
+	
+	h1{
+		font-size: 36px;
+		line-height: 36px;
+		letter-spacing: 3.6px;
+		margin: 0 0 31px 0;
+		font-family: 'gotham_promedium', sans-serif;
+		color: #000;
+		&.content__title{
+			font-family: "gotham_probold", sans-serif;
+			color: #454545;
+			padding: 15px;
+			font-size: 36px;
+			text-align: left;
+			display: inline-block;
+			border: 2px #292929 solid;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+    		margin-bottom: 43px;
+		}
+	}
+	
+	h2{
+		font-size: 30px;
+		color: #000;
+		line-height: 32px;
+		margin: 0;
+		font-family: 'gotham_promedium', sans-serif;
+		letter-spacing: 1.2px;
+	}
+
+	p{
+		margin: 0 0 20px 0;
+	}
+
+	input[type="text"], input[type="password"], input[type="email"], textarea, select {
+		border-radius: 2px;
+		border: 1px solid #949494;
+		color: #2b2b2b;
+		display: block;
+		font-size: 20px;
+		max-width: 100%;
+		outline: medium none;
+		padding: 5px 10px 8px;
+		width: 100%;
+		resize: none;
+	}
+
+	
+}
