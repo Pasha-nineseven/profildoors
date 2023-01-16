@@ -8,6 +8,7 @@
          url('../fonts/gothamPro/regular/gothampro.svg#gotham_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -22,6 +23,7 @@
          url('../fonts/gothamPro/medium/gothampro-medium.svg#gotham_promedium') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -35,7 +37,7 @@
          url('../fonts/gothamPro/bold/gothampro-bold.svg#gotham_probold') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
 
 
@@ -1771,6 +1773,59 @@ a.page-breadcrumbs__item{
             max-width: 100%;
         }
     }
+    &__list{
+        display: flex;
+        flex-wrap:wrap;
+        margin: 0 -25px;
+    }
+    &__item{
+        width: 50%;
+        padding: 0 25px;
+        margin: 0 0 86px 0;
+    }
+    &__in{
+        width: 100%;
+        height: 100%;
+        font-family: 'gotham_promedium';
+    }
+    &__img{
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 0 1px #ccc;
+        img{
+            max-width: 100%;
+            display: block;
+            height: auto;
+        }
+    }
+    &__top{
+        padding: 20px 0 10px;
+        font-size: 24px;
+       
+        text-transform: uppercase;
+    }
+    &__txt{
+        min-height: 141px;
+        overflow: hidden;
+        padding: 0 2px;
+        text-overflow: ellipsis;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 6px 36px 0 -2px;
+    }
+    &__btn {
+        margin-top: 30px;
+        border: 1px #777f8c solid;
+        text-decoration: none;
+        padding: 8px 16px;
+        display: inline-block;
+        color: #949494;
+        transition: all .3s ease;
+        &:hover{
+            background-color: #777f8c;
+            color: #FFF;
+        }
+    }
 }
 .content-in{
     margin: 0 -20px 30px;
@@ -2294,5 +2349,225 @@ a.page-breadcrumbs__item{
     }
     .chosen-container-single .chosen-search {
         padding: 5px 15px;
+    }
+}
+
+
+.systems{
+    &__list{
+        display: flex;
+        flex-wrap:wrap;
+        margin: 0 -10px;
+    }
+    &__item{
+        width: 50%;
+        padding: 0 10px;
+        margin-bottom: 85px;
+    }
+    &__in{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        &:hover{
+            text-decoration: none;
+            .systems__over{
+                opacity: 1;
+            }
+            .systems__view img{
+                transform: scale(1.1);
+            }
+            .systems__view a{
+                opacity: 1;
+            }
+        }
+    }
+    &__link{
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+        text-decoration: underline;
+        display: inline-block;
+        color: #949494;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__view{
+        overflow: hidden;
+        position: relative;
+        img{
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            transition: all 0.4s ease-in;
+        }
+        a{
+            display: inline-block;
+            border: 1px solid #f2f2f2;
+            color: #fff;
+            font-weight: 500;
+            left: 50%;
+            opacity: 0;
+            padding: 12px 25px;
+            position: absolute;
+            text-decoration: none;
+            text-transform: uppercase;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            line-height: 20px;
+            z-index: 2;
+            transition: all 0.4s ease-in;
+            font-family: 'gotham_promedium';
+            &:hover{
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+    &__txt{
+        text-align: left;
+        font-size: 18px;
+        line-height: 23px;
+        margin: 6px 40px 0 -2px;
+    }
+    &__over {
+        background: none repeat scroll 0 0 rgba(0,0,0,0.6);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.4s ease-in;
+    }
+}
+
+
+.contacts-sqheme{
+    img{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.contacts{
+    &__top{
+        border: 1px solid #000;
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 51px;
+        padding: 29px 0;
+        text-align: center;
+        font-family: 'gotham_promedium';
+    }
+    .tabs-nav{
+        justify-content: center;
+    }
+    .tabs-nav__item{
+        font-size: 25px;
+    }
+    .tabs-content{
+        margin-bottom: 50px;
+    }
+}
+
+.contacts-message{
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    span{
+        background-color: rgb(255, 0, 0);
+        color: #fff;
+    }
+    a{
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.contacts-form{
+    margin: 0 auto;
+    max-width: 704px;
+    &__title{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 101px;
+        margin: 0 0 14px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__item{
+        margin: 0 0 17px;
+        &.m-center{
+            text-align: center;
+        }
+    }
+    // input{
+    //     font-size: 18px;
+    //     margin: 0;
+    //     padding: 15px 20px 14px;
+    // }
+    &__submit{
+        background: none repeat scroll 0 0 rgba(0,0,0,0);
+        border: 1px solid #949494;
+        border-radius: 2px;
+        color: #949494;
+        font-size: 17px;
+        font-family: 'gotham_promedium';
+        margin: 22px auto 0;
+        padding: 15px 37px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    &__submit[disabled]{
+        background: none repeat scroll 0 0 rgba(148, 148, 148, 0.14);
+        color: rgba(148, 148, 148, 0.14);
+        border: rgba(148, 148, 148, 0.14);
+    }
+}
+
+.workarea{
+    .contacts-form{
+        input[type=email],
+        input[type=password],
+        input[type=text],
+        select,
+        textarea{
+            font-size: 18px;
+            margin: 0;
+            padding: 15px 20px 14px;
+        }
+        textarea{
+            min-height: 224px;
+            padding: 13px 21px;
+        }
+        select{
+            color:rgb(117, 117, 117);
+        }
+        input[type="checkbox"]+label{
+            cursor: pointer;
+        }
+    }
+}
+
+.company{
+    max-width: 680px;
+    margin: 0 auto;
+    &__top{
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    &__img{
+        margin-bottom: 30px;
+        img{
+            display: block;
+            max-width: 100%;
+        }
     }
 }

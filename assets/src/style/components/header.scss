@@ -204,6 +204,9 @@
     position: relative;
     text-transform: uppercase;
     transition: all .15s linear;
+    &.active{
+        color: rgb(180,200,255);
+    }
 }
 
 .menu-mobile-more{

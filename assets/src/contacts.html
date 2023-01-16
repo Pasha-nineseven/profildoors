@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/header.html
+		<main class="page-content workarea">
+            <div class="page-breadcrumbs">
+                <div class="container">
+                    <div class="page-breadcrumbs__list">
+                        <a href="#" class="page-breadcrumbs__item">ProfilDoors</a>
+                        <span class="page-breadcrumbs__item">Контактная информация</span>
+                    </div>
+                </div>
+            </div>
+            <div class="page-title">
+                <div class="container">
+                    <h1>КОНТАКТНАЯ ИНФОРМАЦИЯ</h1>
+                </div>
+            </div>
+			<div class="contacts">
+				<div class="container">
+                    <div class="contacts__top">
+                        108827, г. Москва, поселение Щаповское, поселок Курилово, строение 6
+                    </div>
+					<div class="tabs-nav">
+                        <a href="#tab1" class="tabs-nav__item active">КАРТА</a>
+                        <a href="#tab2" class="tabs-nav__item">СХЕМА</a>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tabs-content__item" id="tab1">
+                            <div class="page-map">
+                                <div id="page-map" class="page-map__view"></div>
+                            </div>
+                        </div>
+                        <div class="tabs-content__item" id="tab2">
+                            <div class="contacts-sqheme">
+                                <img src="img/content/1452952286-1983178968.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-message">
+                        <span>Обратите внимание! Сайт фабрики носит информационный характер.<br>
+                            По вопросам монтажа и приобретения дверей в розницу,<br>
+                            обращайтесь к нашим дилерам. </span><br>
+                            <a href="#">ГДЕ КУПИТЬ</a><span> - в данном разделе размещены их контакты. </span>
+                    </div>
+
+                    <div class="contacts-form">
+                        <form action="#" method="post">
+                            <div class="contacts-form__title">
+                                НАПИШИТЕ НАМ
+                            </div>
+                            <div class="contacts-form__item">
+                                <input class="lbInput" value="" placeholder="ФИО *" name="form_text_29" id="ContactForm_name" type="text">
+                            </div>
+                            <div class="contacts-form__item">
+                                <input class="lbInput" placeholder="Телефон *" name="form_text_30" value="" id="ContactForm_phone" type="text">
+                            </div>
+                            <div class="contacts-form__item">
+                                <input class="lbInput" placeholder="E-mail *" name="form_text_31" value="" id="ContactForm_email" type="text">
+                            </div>
+                            <div class="contacts-form__item">
+                                <input class="lbInput" placeholder="Город *" name="form_text_32" value="" id="ContactForm_city" type="text">
+                            </div>
+
+                            <div class="contacts-form__item">
+                                <select class="fancy-select" name="form_dropdown_SIMPLE_QUESTION_517" id="ContactForm_to" sb="85096253">
+                                    <option value="42">В отдел снабжения *</option>
+                                    <option value="41">В отдел оптовых продаж *</option>
+                                    <option value="43">Розничная покупка, замер, монтаж *</option>
+                                </select>
+                            </div>
+
+                            <div class="contacts-form__item">
+                                <textarea class="lbText" cols="1" rows="1" placeholder="Сообщение *" name="form_textarea_34" id="ContactForm_message"></textarea>
+                            </div>
+                            <div class="contacts-form__item">
+                                <fieldset>
+                                    <input type="checkbox" name="checkTrueDate" id="checkTrueDate"  onclick="myFunction()">
+                                    <label for="checkTrueDate">
+                                        Я даю согласие на обработку персональных данных.<span class="m-error">*</span>
+                                    </label>
+                                    
+                                </fieldset>
+                            </div>
+                            <div class="contacts-form__item m-center">
+                                <input class="contacts-form__submit" type="submit" name="web_form_apply" id="web_form_apply" value="Отправить" disabled="">
+                            </div>
+                            <script>
+                                function myFunction() {
+                                    var checkBox = document.getElementById("checkTrueDate");
+                                    var submit = document.getElementById("web_form_apply");
+                                    if (checkBox.checked == true){
+                                        submit.disabled = false;
+                                    } else {
+                                        submit.disabled = true;
+                                    }
+                                }
+                            </script>
+                        </form>
+                    </div>
+				</div>
+			</div>
+
+		</main>
+	</div><!-- END LAYOUT-->
+	<!-- POPUP -->
+	<div id="dealer-popup" class="popup m-dealer dnone">
+		<div class="popup-title">
+			Стать дилером
+		</div>
+		<form action="#">
+			<div class="popup-form">
+				<div class="popup-form__item">
+					<div class="popup-form__label">
+						Имя и Фамилия 
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-name" name="name" value="">
+				</div>
+				<div class="popup-form__item">
+					<div class="popup-form__label">
+						Адрес эл. почты
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-email" name="email" value="">
+				</div>
+
+				<div class="popup-form__item">
+					<div class="popup-form__label">
+						Название компании
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-company" name="company" value="">
+				</div>
+				<div class="popup-form__item">
+					<div class="popup-form__label">
+						Сайт
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-website" name="website" value="">
+				</div>
+
+				<div class="popup-form__item">
+					<div class="popup-form__label">
+						Страна
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-country" name="country" value="">
+				</div>
+				<div class="popup-form__item">
+					<div class="popup-form__label">
+						Город
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-city" name="city" value="">
+				</div>
+
+				<div class="popup-form__item">
+					<div class="popup-form__label">
+						Номер телефона
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-phone" name="phone" value="">
+				</div>
+				<div class="popup-form__item">
+					<div class="popup-form__label">
+						Дополнительная информация
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-info" name="info" value="">
+				</div>
+
+
+				<div class="popup-form__item">
+					<input class="btn" type="submit" name="send" value="Отправить">
+				</div>
+			</div>
+		</form>
+		
+	</div>
+	//= template/footer.html
+
+	<script src="js/libs/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

@@ -8,6 +8,7 @@ var path = {
         js_libs: 'assets/build/js/libs/',
         css: 'assets/build/css/',
         img: 'assets/build/img/',
+        favicon: 'assets/build/favicon/',
         fonts: 'assets/build/fonts/'
     },
     src: {
@@ -15,6 +16,7 @@ var path = {
         js: 'assets/src/js/interface.js',
         style: 'assets/src/style/main.scss',
         img: 'assets/src/img/**/*.*',
+        favicon: 'assets/src/favicon/**/*.*',
         fonts: 'assets/src/fonts/**/*.*'
     },
     watch: {
@@ -22,6 +24,7 @@ var path = {
         js: 'assets/src/js/*.js',
         css: 'assets/src/style/**/*.scss',
         img: 'assets/src/img/**/*.*',
+        favicon: 'assets/src/favicon/**/*.*',
         fonts: 'assets/srs/fonts/**/*.*'
     },
     libs: {
@@ -102,6 +105,12 @@ gulp.task('css_libs:build', function () {
 });
 
 
+//favicon
+gulp.task('favicon:build', function() {
+    return gulp.src(path.src.favicon)
+        .pipe(gulp.dest(path.build.favicon));
+});
+
 // сбор js
 gulp.task('js:build', function () {
     return gulp.src([
@@ -178,6 +187,7 @@ gulp.task('build',
             'libs:build',
             'js:build',
             'fonts:build',
+            'favicon:build',
             'image:build'
         )
     )
@@ -192,6 +202,7 @@ gulp.task('watch', function () {
     gulp.watch(path.watch.js, gulp.series('js:build'));//+++
     gulp.watch(path.watch.img, gulp.series('image:build'));
     gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
+    gulp.watch(path.watch.favicon, gulp.series('favicon:build'));
 });
 
 // задача по умолчанию

@@ -73,10 +73,10 @@ textarea,input {
 }
 
 
-::-webkit-input-placeholder {color:#a5a8ab;transition:all 0.3s ease;}
-::-moz-placeholder          {color:#a5a8ab;transition:all 0.3s ease;}
-:-moz-placeholder           {color:#a5a8ab;transition:all 0.3s ease;}
-:-ms-input-placeholder      {color:#a5a8ab;transition:all 0.3s ease;}
+::-webkit-input-placeholder {color:rgb(117, 117, 117);transition:all 0.3s ease;}
+::-moz-placeholder          {color:rgb(117, 117, 117);transition:all 0.3s ease;}
+:-moz-placeholder           {color:rgb(117, 117, 117);transition:all 0.3s ease;}
+:-ms-input-placeholder      {color:rgb(117, 117, 117);transition:all 0.3s ease;}
 
 
 
@@ -139,5 +139,9 @@ textarea,input {
 		resize: none;
 	}
 
-	
+	fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
 }

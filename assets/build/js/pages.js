@@ -20,5 +20,9 @@ $('body').append(
 		<li><a href="systems-in.html">systems-in</a></li> \
 		<li><a href="findings-in.html">findings-in</a></li> \
 		<li><a href="where.html">where</a></li> \
+		<li><a href="systems.html">systems</a></li> \
+		<li><a href="contacts.html">contacts</a></li> \
+		<li><a href="findings.html">findings</a></li> \
+		<li><a href="company.html">company</a></li> \
 	</ol> \
 </div>');
