@@ -17,12 +17,21 @@
     <!-- favicon end-->
     
     <!-- og  -->
-    <!-- <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="img/og.jpg"> -->
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="http://html.n3.by/pav/profiledoors/index.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="TEST">
+        <meta property="og:description" content="TEST TEST TEST">
+        <meta property="og:image" content="http://html.n3.by/pav/profiledoors/img/content/og.jpg?v3">
+    
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="html.n3.by">
+        <meta property="twitter:url" content="http://html.n3.by/pav/profiledoors/index.html">
+        <meta name="twitter:title" content="TEST">
+        <meta name="twitter:description" content="TEST TEST TEST">
+        <meta name="twitter:image" content="http://html.n3.by/pav/profiledoors/img/content/og.jpg?v3">
+    
     <!-- og end-->
     
     <link href="css/libs.min.css" rel="stylesheet">
@@ -80,7 +89,7 @@
 						</div>
 						<div class="page-header-menu">
 							<a href="#" class="page-header-menu__link">Компания</a>
-							<a href="#" class="page-header-menu__link active">Каталог</a>
+							<span class="page-header-menu__link active">Каталог</span>
 							<a href="#" class="page-header-menu__link">Системы открывания</a>
 							<a href="#" class="page-header-menu__link">Где купить</a>
 							<a href="#dealer-popup" class="page-header-menu__link js-popup-inline">Стать дилером</a>
@@ -97,7 +106,7 @@
 								<div class="container">
 									<div class="menu-mobile__list">
 										<a href="#" class="menu-mobile__link">Компания</a>
-										<a href="#" class="menu-mobile__link active">Каталог</a>
+										<span class="menu-mobile__link active">Каталог</span>
 										<a href="#" class="menu-mobile__link">Системы открывания</a>
 										<a href="#" class="menu-mobile__link">Где купить</a>
 										<a href="#" class="menu-mobile__link">Стать дилером</a>
@@ -158,6 +167,7 @@
                     <h1>КАТАЛОГ</h1>
                 </div>
             </div>
+            <!-- CONTENT-PART -->
 			<div class="catalog">
 				<div class="container">
 					<div class="catalog__list">
@@ -328,84 +338,88 @@
                     </div>
 				</div>
 			</div>
-
+            <!-- endCONTENT-PART -->
 		</main>
 	</div><!-- END LAYOUT-->
     <!-- POPUP -->
     <div id="dealer-popup" class="popup m-dealer dnone">
-        <div class="popup-title">
-            Стать дилером
-        </div>
-        <form action="#">
-            <div class="popup-form">
-                <div class="popup-form__item">
-                    <div class="popup-form__label">
-                        Имя и Фамилия 
-                        <span class="m-error">*</span>
-                    </div>
-                    <input type="text" id="b-pop-dialer_form-name" name="name" value="">
-                </div>
-                <div class="popup-form__item">
-                    <div class="popup-form__label">
-                        Адрес эл. почты
-                        <span class="m-error">*</span>
-                    </div>
-                    <input type="text" id="b-pop-dialer_form-email" name="email" value="">
-                </div>
+		<div class="popup-title">
+			Стать дилером
+		</div>
+		<div class="b-pop-content m-hidden">
+			Спасибо!<br><br>
+			Ваша заявка отправлена и будет рассмотрена в скором времени.
+		</div>
+		<form action="#">
+			<div class="popup-form">
+				<div class="popup-form__item required">
+					<div class="popup-form__label">
+						Имя и Фамилия 
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-name" name="name" value="">
+				</div>
+				<div class="popup-form__item required">
+					<div class="popup-form__label">
+						Адрес эл. почты
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-email" name="email" value="">
+				</div>
 
-                <div class="popup-form__item">
-                    <div class="popup-form__label">
-                        Название компании
-                        <span class="m-error">*</span>
-                    </div>
-                    <input type="text" id="b-pop-dialer_form-company" name="company" value="">
-                </div>
-                <div class="popup-form__item">
-                    <div class="popup-form__label">
-                        Сайт
-                        <span class="m-error">*</span>
-                    </div>
-                    <input type="text" id="b-pop-dialer_form-website" name="website" value="">
-                </div>
+				<div class="popup-form__item required">
+					<div class="popup-form__label">
+						Название компании
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-company" name="company" value="">
+				</div>
+				<div class="popup-form__item required">
+					<div class="popup-form__label">
+						Сайт
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-website" name="website" value="">
+				</div>
 
-                <div class="popup-form__item">
-                    <div class="popup-form__label">
-                        Страна
-                        <span class="m-error">*</span>
-                    </div>
-                    <input type="text" id="b-pop-dialer_form-country" name="country" value="">
-                </div>
-                <div class="popup-form__item">
-                    <div class="popup-form__label">
-                        Город
-                        <span class="m-error">*</span>
-                    </div>
-                    <input type="text" id="b-pop-dialer_form-city" name="city" value="">
-                </div>
+				<div class="popup-form__item required">
+					<div class="popup-form__label">
+						Страна
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-country" name="country" value="">
+				</div>
+				<div class="popup-form__item required">
+					<div class="popup-form__label">
+						Город
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-city" name="city" value="">
+				</div>
 
-                <div class="popup-form__item">
-                    <div class="popup-form__label">
-                        Номер телефона
-                        <span class="m-error">*</span>
-                    </div>
-                    <input type="text" id="b-pop-dialer_form-phone" name="phone" value="">
-                </div>
-                <div class="popup-form__item">
-                    <div class="popup-form__label">
-                        Дополнительная информация
-                        <span class="m-error">*</span>
-                    </div>
-                    <input type="text" id="b-pop-dialer_form-info" name="info" value="">
-                </div>
+				<div class="popup-form__item required">
+					<div class="popup-form__label">
+						Номер телефона
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-phone" name="phone" value="">
+				</div>
+				<div class="popup-form__item required">
+					<div class="popup-form__label">
+						Дополнительная информация
+						<span class="m-error">*</span>
+					</div>
+					<input type="text" id="b-pop-dialer_form-info" name="info" value="">
+				</div>
 
 
-                <div class="popup-form__item">
-                    <input class="btn" type="submit" name="send" value="Отправить">
-                </div>
-            </div>
-        </form>
-        
-    </div>
+				<div class="popup-form__item">
+					<input class="btn" type="submit" name="send" value="Отправить">
+				</div>
+			</div>
+		</form>
+		
+	</div>
 	<footer class="page-footer">
 		<div class="container">
 			<div class="page-footer__logo">

@@ -8,6 +8,7 @@
 	<div class="layout">
 		//= template/header.html
 		<main class="page-content workarea">
+			<!-- CONTENT-PART -->
 			<div class="home-slider--view">
 				<div class="home-slider">
 					<div class="home-slider__item" style="background-image: url(img/content/penal_banner.jpg);">
@@ -62,7 +63,6 @@
 					
 				</div>
 			</div>
-
 
 			<div class="home-doors">
 				<div class="container">
@@ -123,9 +123,6 @@
 								<div class="home-doors__category">Перегородки</div>
 							</a>
 						</div>
-					</div>
-
-					<div class="home-doors__list">
 						<div class="home-doors__item">
 							<a href="#" class="home-doors__in">
 								<div class="home-doors__img">
@@ -308,9 +305,37 @@
 								</div>
 							</a>
 						</div>
+
+						<div class="home-news__item">
+							<a href="#" class="home-news__in">
+								<div class="home-news__img">
+									<img src="img/content/PD_2022_1_.jpeg" alt="">
+								</div>
+								<div class="home-news__date">
+									06.09.2022
+								</div>
+								<div class="home-news__title">
+									ПРИГЛАШАЕМ НА ПРЕЗЕНТАЦИЮ НОВЫХ КОЛЛЕКЦИЙ ДВЕРЕЙ PROFILDOORS
+								</div>
+							</a>
+						</div>
+						<div class="home-news__item">
+							<a href="#" class="home-news__in">
+								<div class="home-news__img">
+									<img src="img/content/PD_2022_1_.jpeg" alt="">
+								</div>
+								<div class="home-news__date">
+									06.09.2022
+								</div>
+								<div class="home-news__title">
+									ПРИГЛАШАЕМ НА ПРЕЗЕНТАЦИЮ НОВЫХ КОЛЛЕКЦИЙ ДВЕРЕЙ PROFILDOORS
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!-- end CONTENT-PART -->
 		</main>
 	</div><!-- END LAYOUT-->
 	<!-- POPUP -->
@@ -318,16 +343,20 @@
 		<div class="popup-title">
 			Стать дилером
 		</div>
+		<div class="b-pop-content m-hidden">
+			Спасибо!<br><br>
+			Ваша заявка отправлена и будет рассмотрена в скором времени.
+		</div>
 		<form action="#">
 			<div class="popup-form">
-				<div class="popup-form__item">
+				<div class="popup-form__item required">
 					<div class="popup-form__label">
 						Имя и Фамилия 
 						<span class="m-error">*</span>
 					</div>
 					<input type="text" id="b-pop-dialer_form-name" name="name" value="">
 				</div>
-				<div class="popup-form__item">
+				<div class="popup-form__item required">
 					<div class="popup-form__label">
 						Адрес эл. почты
 						<span class="m-error">*</span>
@@ -335,14 +364,14 @@
 					<input type="text" id="b-pop-dialer_form-email" name="email" value="">
 				</div>
 
-				<div class="popup-form__item">
+				<div class="popup-form__item required">
 					<div class="popup-form__label">
 						Название компании
 						<span class="m-error">*</span>
 					</div>
 					<input type="text" id="b-pop-dialer_form-company" name="company" value="">
 				</div>
-				<div class="popup-form__item">
+				<div class="popup-form__item required">
 					<div class="popup-form__label">
 						Сайт
 						<span class="m-error">*</span>
@@ -350,14 +379,14 @@
 					<input type="text" id="b-pop-dialer_form-website" name="website" value="">
 				</div>
 
-				<div class="popup-form__item">
+				<div class="popup-form__item required">
 					<div class="popup-form__label">
 						Страна
 						<span class="m-error">*</span>
 					</div>
 					<input type="text" id="b-pop-dialer_form-country" name="country" value="">
 				</div>
-				<div class="popup-form__item">
+				<div class="popup-form__item required">
 					<div class="popup-form__label">
 						Город
 						<span class="m-error">*</span>
@@ -365,14 +394,14 @@
 					<input type="text" id="b-pop-dialer_form-city" name="city" value="">
 				</div>
 
-				<div class="popup-form__item">
+				<div class="popup-form__item required">
 					<div class="popup-form__label">
 						Номер телефона
 						<span class="m-error">*</span>
 					</div>
 					<input type="text" id="b-pop-dialer_form-phone" name="phone" value="">
 				</div>
-				<div class="popup-form__item">
+				<div class="popup-form__item required">
 					<div class="popup-form__label">
 						Дополнительная информация
 						<span class="m-error">*</span>

@@ -121,6 +121,15 @@
         position: relative;
         transition: all .15s linear;
     }
+    .slick-arrow{
+        top: 50%;
+        &.slick-prev{
+            left: -30px;
+        }
+        &.slick-next{
+            right: -30px;
+        }
+    }
 }
 
 .home-title{
@@ -170,7 +179,8 @@
     &__in{
         display: flex;
         justify-content: space-between;
-        height: 220px;
+        align-items: center;
+        min-height: 220px;
         position: relative;
         background-image: url(../img/content/bg-dwlod-catalog.jpg);
         background-size: cover;
@@ -178,18 +188,20 @@
     }
     &__icon{
         width: 599px;
-        height: 220px;
+        height: 100%;
         position: relative;
         img{
             position: absolute;
             left: 36px;
-            top: -103px;
+            top: 50%;
+            transform: translateY(-50%);
             max-width: 100%;
         }
     }
     &__info{
         width: 400px;
         padding-top: 47px;
+        padding-bottom: 20px;
     }
     &__title{
         font-size: 30px;
@@ -267,9 +279,9 @@
     top: 0;
     position: absolute;
     padding: 0;
+    z-index: 2;
     &.slick-prev{
         left: 0;
-        top: 0;
         background-position: 0 0;
     }
     &.slick-next{
@@ -446,19 +458,21 @@
 }
 
 .catalog-i-list{
-    column-count: 2;
+    display: flex;
+    flex-wrap: wrap;
 }
 .catalog-i-item{
-    color: #333333;
+    color: #333;
     font-size: 13px;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     position: relative;
-    margin-left: 15px;
+    padding-left: 15px;
     line-height: 16px;
     text-align: left;
     border-bottom: 1px dotted transparent;
     width: 50%;
+    margin-bottom: 8px;
     &:hover{
         border-bottom-color: white;
         &:before{
@@ -474,7 +488,7 @@
         background-size: 100%;
         position: absolute;
         top: 1px;
-        left: -15px;
+        left: 0;
     }
 }
 
@@ -1915,6 +1929,15 @@ a.page-breadcrumbs__item{
         width: 50%;
         padding: 0 15px;
         margin-bottom: 15px;
+        &.m-error{
+            input[type=email],
+            input[type=password],
+            input[type=text],
+            select,
+            textarea{
+                border-color: #d00;
+            }
+        }
     }
     &__label{
         font-weight: normal;
@@ -2569,5 +2592,12 @@ a.page-breadcrumbs__item{
             display: block;
             max-width: 100%;
         }
+    }
+}
+
+
+.b-pop-content{
+    &.m-hidden{
+        display: none;
     }
 }

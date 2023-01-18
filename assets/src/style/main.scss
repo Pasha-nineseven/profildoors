@@ -2,6 +2,7 @@
 
 // Подключение нужных SCSS исходников Bootstrap
 @import "bootstrap/normalize";
+@import "bootstrap/grid/bootstrap-grid.scss";
 
 @import "components/body";
 // @import "components/workarea";

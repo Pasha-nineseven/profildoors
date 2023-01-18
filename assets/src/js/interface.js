@@ -77,6 +77,28 @@ $(document).ready(function() {
 	    });
 	}
 
+
+	if($('.home-news__list').length>0){
+		var $h_slider = $('.home-news__list');
+
+	    $h_slider.slick({
+			infinite: true,
+			dots: false,
+			arrows: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+				},
+			]
+	    });
+	}
+
 	//tabs
 	if($('#series-tabs').length>0){
 		var $tabs = $('#series-tabs');
@@ -127,19 +149,55 @@ $(document).ready(function() {
 			no_results_text: 'Совпадений не найдено',
 			placeholder_text_single: 'Любой'
 		});
+	};
+
+	// form validate simple
+	if($('.popup-form').length>0){
+		var $pop = $('.m-dealer'),
+			$content = $pop.find('.b-pop-content'),
+			$form = $pop.find('form');
+
+		$form.submit(function($e){
+			$e.preventDefault();
+			var bVerified = true;
+			
+			$form.find('.popup-form__item.required').each(function(){
+				var $binp = $(this),
+					$inp = $binp.find('input');
+				
+				if(!$inp.val().length){
+					bVerified = false;
+					$binp.addClass('m-error');
+				} else $binp.removeClass('m-error');
+			});
+			
+			if(bVerified){
+				$content.removeClass('m-hidden');
+				$form.hide();
+				// $.ajax({
+				// 	type: 'GET',
+				//  url: url,
+				// 	data: $form.serialize() + '&send=ok',
+				// 	dataType: 'html',
+				// 	success: function(result){
+				// 		$content.html(result);
+				// 	}
+				// });
+			}
+		});
 	}
 
 
 
 	//home-news-mobile
-	slider_news_init();
+	// slider_news_init();
 	slider_doors_init();
 	slider_other_init();
 });
 
 $(window).resize(function () {
 	//home-news-mobile
-	slider_news_init();
+	// slider_news_init();
 	slider_doors_init();
 	slider_other_init();
 });
