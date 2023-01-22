@@ -470,11 +470,16 @@
     padding-left: 15px;
     line-height: 16px;
     text-align: left;
-    border-bottom: 1px dotted transparent;
+    
     width: 50%;
     margin-bottom: 8px;
+    span{
+        border-bottom: 1px dotted transparent;
+    }
     &:hover{
-        border-bottom-color: white;
+        span{
+            border-bottom-color: white;
+        }
         &:before{
             background: url(../img/content/hover.png);
         }
@@ -515,6 +520,7 @@
 
     &__list{
         display: flex;
+        flex-wrap: wrap;
     }
     &__item{
         display: inline-block;

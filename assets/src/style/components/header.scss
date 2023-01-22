@@ -138,6 +138,9 @@
             border-bottom: 1px solid transparent;
             color: #191e32;
         }
+        a{
+            text-decoration: none;
+        }
         &.m-geo{
             position: relative;
             &:before{
@@ -255,6 +258,16 @@
             text-decoration: none;
             background: #FFF;
             color: #333;
+        }
+    }
+    &__center{
+        text-align: center;
+        padding: 5px 0;
+        .catalog-menu__link{
+            text-transform: uppercase;
+            &.selected{
+                text-decoration: none;
+            }
         }
     }
 }

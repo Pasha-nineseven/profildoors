@@ -41,9 +41,10 @@ a{
 	text-decoration: none;
 	&:not([class]){
 		color: #949494;
-		// &:hover{
-		// 	color: #056493;
-		// }
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 }
 
